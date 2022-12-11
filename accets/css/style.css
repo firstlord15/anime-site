@@ -1,0 +1,409 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  background: linear-gradient(#000000eb, rgb(226, 59, 59));
+  flex: 1 1 auto;
+}
+
+.anchor {
+  margin-top: -100px;
+  display: inline-block;
+  position: relative;
+  height: 1px;
+  width: 1px;
+}
+
+/* first section */
+
+.first {
+  margin-top: 70px;
+}
+
+.first_text {
+  background-color: rgb(255, 255, 255);
+  padding: 35px;
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  font-size: 42px;
+  font-weight: bold;
+  box-shadow: 4px 4px 15px #f01d6396;
+  font-family: monospace;
+  animation: 0.5s show ease;
+}
+
+.divider_text {
+  font-size: 30px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    margin-top: 100px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+.first_img {
+  height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opacity {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url(https://img1.akspic.ru/crops/7/4/7/4/6/164747/164747-anime-odin_udar_chelovek-prefektura_sajtama-chernyj_i_belyj-dizajn-1920x1080.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+/* second section */
+
+.m1 {
+  margin: 150px auto;
+}
+
+.m2 {
+  margin-top: 150px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  /* border: #e20b6f solid 3px; */
+  border-radius: 30px;
+  position: relative;
+}
+
+.title_text {
+  position: absolute;
+  top: -50px;
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+}
+
+/* card */
+
+.Cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  height: 300px;
+  width: 200px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 10px;
+  margin: 20px;
+  border: 2px solid black;
+  transition: all 0.3s;
+}
+
+footer {
+  background-color: black;
+  height: 300px;
+}
+
+.title_card {
+  font-size: 16px;
+  opacity: 0;
+  background-color: #131313;
+  color: white;
+  transition: all 0.3s;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 0px 0px 5px white;
+  border-radius: 15px;
+  padding: 15px 10px;
+}
+
+.Card:hover .title_card {
+  opacity: 1;
+  transition: all 0.3s;
+  margin-bottom: 30px;
+}
+
+.Card:hover {
+  cursor: pointer;
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+
+.divider {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* avtor */
+
+.section_avtor {
+  margin-top: 150px;
+  margin-bottom: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.avtor_photo {
+  background-image: url(https://sun9-46.userapi.com/impg/0IvhnTC4-BWDLEmalejXWKj9jKXKVGWaFPHXjQ/JU8VCWZgdWY.jpg?size=1365x2048&quality=96&sign=89e0c2f83cf8a02f29b54f7c14fcebc9&type=album);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 200px;
+  border-radius: 50%;
+  float: left;
+}
+
+.text_box {
+  margin-left: 50px;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+
+/* navbar */
+
+.logo {
+  width: 65px;
+  margin-right: auto !important;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  transform: rotate(0deg);
+  transition: all 0.5s;
+  animation: .3s show_sharingan ease;
+}
+
+@keyframes show_sharingan {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo:hover,
+.logo:focus {
+  transform: rotate(360deg);
+  transition: all 0.4s;
+  box-shadow: 0px 0px 10px red;
+  border-radius: 50%;
+}
+
+.img_logo {
+  width: 50px;
+}
+
+.animation_link {
+  font-family: monospace;
+  font-weight: bold !important;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.animation_link:hover,
+.animation_link:focus {
+  color: rgb(226, 59, 59);
+  transition: all 0.15s;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #131313;
+  color: #FFF;
+  height: 70px;
+  box-shadow: 0px 4px 6px black;
+  padding: 0 10%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu>li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 40px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 767px) {
+
+  .first_text {
+    font-size: 30px;
+  }
+
+  .section_avtor {
+    flex-direction: column;
+  }
+
+  .avtor_photo {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 100px;
+  }
+
+  .text_box {
+    margin-left: 20px;
+  }
+
+  .Card {
+    height: 350px;
+    width: 250px;
+  }
+
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 70px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-toggle~.menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #menu-toggle:checked~.menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu>li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+
+  .menu>li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
